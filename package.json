@@ -1,0 +1,35 @@
+{
+  "name": "test-demo-blaze",
+  "version": "1.0.0",
+  "description": "Test QA Automatizator",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "npm:test1": "cypress run --spec \"e2e/CompletarFormulario.feature\""
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "Geovanna Bustos",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^2.5.0",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  }
+}
