@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run --spec \"**/*.feature\"",
     "test:all": "cypress run --spec \"**/*.features\"",
-    "cy:open": "cypress run open"
+    "npm:test1": "cypress run --spec \"e2e/CompletarFormulario.feature\""
   },
   "keywords": [
     "cypress",
@@ -16,7 +16,6 @@
   "author": "Geovanna Bustos",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^4.9.0",
     "cypress-cucumber-preprocessor": "^2.5.0",
     "multiple-cucumber-html-reporter": "^3.5.0"
   },
@@ -29,5 +28,8 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }
+  },
+  "devDependencies": {
+    "cypress": "^13.3.0"
   }
 }

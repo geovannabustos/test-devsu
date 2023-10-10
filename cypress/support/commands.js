@@ -81,7 +81,7 @@ Cypress.Commands.add('iteracionPersonalizadaEncontrarBoton', (numeroDeIteracione
                       }
                     }
                }
-            });*/
+            });
         });
     }
 });

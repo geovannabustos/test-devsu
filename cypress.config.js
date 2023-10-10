@@ -6,6 +6,6 @@ module.exports = {
       return require('./cypress/plugins/index.js')(on, config)
     },
     excludeSpecPattern: '*.js',
-    specPattern: 'cypress/e2e/**/*.{feature,features}',
-  },
+    specPattern: 'cypress/e2e/**/*.{feature,features}'
+  }
 }

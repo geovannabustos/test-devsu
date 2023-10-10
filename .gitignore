@@ -1,6 +1,5 @@
-*/node_modules/
-*/target/
-*/reports/
-*/cypress/cucumber-json/
-*/cypress/screenshots/
-*/cypress/videos/
+node_modules/
+reports/
+cypress/cucumber-json/
+cypress/screenshots/
+cypress/videos/

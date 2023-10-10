@@ -1,8 +1,8 @@
 import {Given,And,When,Then} from "cypress-cucumber-preprocessor/steps";
 Given(/^ingreso al formulario de Evalart e inicio sesion$/, function () {
-    cy.visit('https://tasks.evalartapp.com/automatization');
-    cy.get('[name="username"]').type("708066");
-    cy.get('[type="password"]').type("10df2f32286b7120Mi00LTY2MDgwNw==30e0c83e6c29f1c3");
+    cy.visit('https://link');
+    cy.get('[name="username"]').type("username");
+    cy.get('[type="username"]').type("username");
     cy.get('[type="submit"]').click();
 });
 And(/^visualizo las preguntas$/, function () {
